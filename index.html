@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetVeloz - Internet de Alta Velocidade</title>
+    <title>Strahl & Berthold Advogados Associados</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         :root {
-            --primary-color: #0062cc;
-            --secondary-color: #00a8ff;
-            --accent-color: #ff6b6b;
+            --primary-color: #1a3a5f;
+            --secondary-color: #2c5c8a;
+            --accent-color: #c8a971;
             --dark-color: #2c3e50;
             --light-color: #f8f9fa;
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Georgia', 'Times New Roman', serif;
             color: #333;
+            line-height: 1.6;
         }
         
         .navbar {
@@ -37,8 +37,18 @@
             border-color: var(--secondary-color);
         }
         
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1563014959-7aaa83350992?ixlib=rb-4.0.3') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3') no-repeat center center;
             background-size: cover;
             color: white;
             padding: 120px 0;
@@ -74,27 +84,22 @@
         }
         
         .feature-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: 20px;
         }
         
-        .pricing-card {
-            border: 1px solid #eee;
-            border-radius: 10px;
+        .bg-light-custom {
+            background-color: #f8f9fa;
+        }
+        
+        .practice-area-card {
+            border-left: 4px solid var(--accent-color);
             transition: all 0.3s;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
-        .pricing-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pricing-card.featured {
-            border: 2px solid var(--primary-color);
-            position: relative;
-            z-index: 1;
+        .practice-area-card:hover {
+            background-color: #f1f5f9;
         }
         
         .testimonial-card {
@@ -102,6 +107,7 @@
             border-radius: 10px;
             padding: 25px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--accent-color);
         }
         
         .contact-info {
@@ -124,11 +130,15 @@
         }
         
         .social-icon:hover {
-            color: var(--secondary-color);
+            color: var(--accent-color);
         }
         
-        .bg-light-custom {
-            background-color: #f8f9fa;
+        .accent-color {
+            color: var(--accent-color);
+        }
+        
+        .border-accent {
+            border-color: var(--accent-color) !important;
         }
     </style>
 </head>
@@ -137,8 +147,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="bi bi-lightning-charge-fill me-2"></i>
-                NetVeloz
+                <i class="bi bi-balance-scale me-2"></i>
+                Strahl & Berthold
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -149,13 +159,13 @@
                         <a class="nav-link" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#planos">Planos</a>
+                        <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#vantagens">Vantagens</a>
+                        <a class="nav-link" href="#areas-atuacao">Áreas de Atuação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#cobertura">Cobertura</a>
+                        <a class="nav-link" href="#equipe">Equipe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
@@ -168,160 +178,154 @@
     <!-- Hero Section -->
     <section id="inicio" class="hero-section">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-4">Internet Rápida e Estável para Sua Casa ou Empresa</h1>
-            <p class="lead mb-5">Conecte-se com o mundo em alta velocidade com a melhor infraestrutura da região</p>
-            <a href="#planos" class="btn btn-primary btn-lg me-3">Ver Planos</a>
-            <a href="#contato" class="btn btn-outline-light btn-lg">Contratar Agora</a>
+            <h1 class="display-4 fw-bold mb-4">Excelência Jurídica com Tradição e Inovação</h1>
+            <p class="lead mb-5">Advocacia especializada com mais de 20 anos de atuação no Direito</p>
+            <a href="#contato" class="btn btn-primary btn-lg me-3">Agende uma Consulta</a>
+            <a href="#areas-atuacao" class="btn btn-outline-light btn-lg">Nossas Especialidades</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="vantagens" class="py-5">
+    <!-- About Section -->
+    <section id="sobre" class="py-5">
         <div class="container">
-            <h2 class="section-title">Por que escolher a NetVeloz?</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card feature-card text-center p-4">
-                        <div class="feature-icon">
-                            <i class="bi bi-speedometer2"></i>
-                        </div>
-                        <h3>Alta Velocidade</h3>
-                        <p>Internet fibra óptica com velocidade simétrica para downloads e uploads ultrarrápidos.</p>
+            <h2 class="section-title">Sobre o Escritório</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="lead">Strahl & Berthold Advogados Associados é um escritório com tradição e excelência na prestação de serviços jurídicos.</p>
+                    <p>Fundado em 2003, nosso escritório combina a experiência de profissionais dedicados com um abordagem moderna e eficiente para resolver os desafios jurídicos de nossos clientes.</p>
+                    <p>Localizados em Nova Palma/RS, atendemos clientes em todo o território nacional, com foco em resultados e na satisfação de quem confia em nossos serviços.</p>
+                    <div class="mt-4 p-3 bg-light-custom rounded">
+                        <h5 class="accent-color">Missão</h5>
+                        <p>Prestar serviços jurídicos de excelência, com ética, comprometimento e soluções eficazes para nossos clientes.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card feature-card text-center p-4">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3" class="img-fluid rounded" alt="Escritório de advocacia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section id="areas-atuacao" class="py-5 bg-light-custom">
+        <div class="container">
+            <h2 class="section-title">Áreas de Atuação</h2>
+            <p class="text-center mb-5">Conheça as especialidades do nosso escritório</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 practice-area-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-house-door"></i>
+                        </div>
+                        <h3>Direito Imobiliário</h3>
+                        <p>Atuação em compra e venda de imóveis, regularização de propriedades, usucapião, contratos de locação e questões condominiais.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="p-4 practice-area-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3>Direito de Família</h3>
+                        <p>Divórcio, inventário, partilha de bens, pensão alimentícia, guarda de filhos, investigação de paternidade e adoção.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="p-4 practice-area-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h3>Direito Trabalhista</h3>
+                        <p>Assessoria jurídica para empresas e trabalhadores, defesas em reclamações trabalhistas, acordos e consultoria preventiva.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="p-4 practice-area-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h3>Direito Empresarial</h3>
+                        <p>Constituição de empresas, contratos empresariais, recuperação judicial e extrajudicial, falência e compliance.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="p-4 practice-area-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+                        <h3>Direito Civil</h3>
+                        <p>Contratos em geral, obrigações, responsabilidade civil, indenizações e ações possessórias.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="p-4 practice-area-card">
                         <div class="feature-icon">
                             <i class="bi bi-shield-check"></i>
                         </div>
-                        <h3>Conectividade Segura</h3>
-                        <p>Proteção avançada contra ameaças virtuais para navegar com tranquilidade.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card text-center p-4">
-                        <div class="feature-icon">
-                            <i class="bi bi-headset"></i>
-                        </div>
-                        <h3>Suporte 24/7</h3>
-                        <p>Equipe técnica especializada disponível 24 horas por dia, 7 dias por semana.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card text-center p-4">
-                        <div class="feature-icon">
-                            <i class="bi bi-currency-dollar"></i>
-                        </div>
-                        <h3>Melhor Custo-Benefício</h3>
-                        <p>Planos acessíveis com a melhor relação custo-benefício do mercado.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card text-center p-4">
-                        <div class="feature-icon">
-                            <i class="bi bi-wifi"></i>
-                        </div>
-                        <h3>Wi-Fi de Alta Performance</h3>
-                        <p>Roteadores de última geração para garantir sinal estável em toda sua casa.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card text-center p-4">
-                        <div class="feature-icon">
-                            <i class="bi bi-trophy"></i>
-                        </div>
-                        <h3>Prêmio de Qualidade</h3>
-                        <p>Reconhecida como a melhor provedora da região por 3 anos consecutivos.</p>
+                        <h3>Direito do Consumidor</h3>
+                        <p>Defesa dos direitos do consumidor, ações contra fornecedores, vícios de produtos e serviços, e práticas abusivas.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Plans Section -->
-    <section id="planos" class="py-5 bg-light-custom">
+    <!-- Team Section -->
+    <section id="equipe" class="py-5">
         <div class="container">
-            <h2 class="section-title">Nossos Planos</h2>
-            <p class="text-center mb-5">Escolha o plano ideal para suas necessidades</p>
-            
+            <h2 class="section-title">Nossa Equipe</h2>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="pricing-card text-center p-4">
-                        <h3>Internet Básica</h3>
-                        <div class="price mb-3">
-                            <span class="fs-1 fw-bold">R$ 79,90</span>
-                            <span>/mês</span>
+                <div class="col-md-6">
+                    <div class="card feature-card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3" class="img-fluid rounded-start h-100" alt="Dr. Strahl" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr. Eduardo Strahl</h5>
+                                    <p class="card-text">OAB/RS 45.789</p>
+                                    <p class="card-text">Especialista em Direito Civil e Imobiliário com mais de 25 anos de experiência. Formado pela Universidade Federal de Santa Maria.</p>
+                                    <p class="card-text"><small class="text-muted">eduardo.strahl@advocacia.com.br</small></p>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> 100 Mbps</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Wi-Fi Grátis</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Instalação Grátis</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Suporte 24h</li>
-                        </ul>
-                        <a href="#contato" class="btn btn-outline-primary">Contratar Agora</a>
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="pricing-card text-center p-4 featured">
-                        <span class="badge bg-primary position-absolute top-0 start-50 translate-middle px-3 py-2">Mais Popular</span>
-                        <h3>Internet Turbo</h3>
-                        <div class="price mb-3">
-                            <span class="fs-1 fw-bold">R$ 99,90</span>
-                            <span>/mês</span>
+                <div class="col-md-6">
+                    <div class="card feature-card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3" class="img-fluid rounded-start h-100" alt="Dra. Berthold" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dra. Mariana Berthold</h5>
+                                    <p class="card-text">OAB/RS 52.346</p>
+                                    <p class="card-text">Especialista em Direito de Família e Sucessões. Mestre em Direito pela PUC/RS. Atua há 20 anos na área jurídica.</p>
+                                    <p class="card-text"><small class="text-muted">mariana.berthold@advocacia.com.br</small></p>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> 300 Mbps</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Wi-Fi Grátis</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Instalação Grátis</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Suporte 24h</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Antivírus Grátis</li>
-                        </ul>
-                        <a href="#contato" class="btn btn-primary">Contratar Agora</a>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="pricing-card text-center p-4">
-                        <h3>Internet Ultra</h3>
-                        <div class="price mb-3">
-                            <span class="fs-1 fw-bold">R$ 149,90</span>
-                            <span>/mês</span>
-                        </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> 600 Mbps</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Wi-Fi Grátis</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Instalação Grátis</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Suporte 24h</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Antivírus Grátis</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Streaming Otimizado</li>
-                        </ul>
-                        <a href="#contato" class="btn btn-outline-primary">Contratar Agora</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Coverage Section -->
-    <section id="cobertura" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Área de Cobertura</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="lead">Atendemos em toda a região metropolitana e estamos expandindo constantemente nossa rede.</p>
-                    <ul class="list-group">
-                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Zona Norte</li>
-                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Zona Sul</li>
-                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Zona Leste</li>
-                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Zona Oeste</li>
-                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Centro</li>
-                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Regiões vizinhas</li>
-                    </ul>
-                    <p class="mt-3">Não sabe se temos cobertura na sua região? <a href="#contato">Entre em contato</a> e verifique agora mesmo!</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3" class="img-fluid rounded" alt="Mapa de cobertura">
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card feature-card">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Equipe de Colaboradores</h4>
+                            <p class="card-text">Contamos com uma equipe de advogados associados, estagiários e assistentes jurídicos preparados para oferecer o melhor atendimento e suporte aos nossos clientes.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -341,11 +345,11 @@
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
                         </div>
-                        <p class="fst-italic">"Desde que contratei a NetVeloz, nunca mais tive problemas com internet. A velocidade é exatamente a contratada e o suporte é muito eficiente."</p>
+                        <p class="fst-italic">"O Dr. Strahl resolveu uma questão complexa de herança para nossa família com muita competência e sensibilidade. Recomendo o escritório sem dúvidas."</p>
                         <div class="d-flex align-items-center mt-3">
                             <div>
                                 <h5 class="mb-0">Carlos Silva</h5>
-                                <small class="text-muted">Zona Sul</small>
+                                <small class="text-muted">Cliente desde 2015</small>
                             </div>
                         </div>
                     </div>
@@ -359,11 +363,11 @@
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
                         </div>
-                        <p class="fst-italic">"Ótimo custo-benefício! A instalação foi rápida e o técnico muito educado. Recomendo para todos que procuram uma internet estável e de qualidade."</p>
+                        <p class="fst-italic">"A Dra. Mariana foi excelente em meu divórcio. Me orientou em todas as etapas e conseguiu um acordo justo. Profissional competente e humana."</p>
                         <div class="d-flex align-items-center mt-3">
                             <div>
-                                <h5 class="mb-0">Mariana Oliveira</h5>
-                                <small class="text-muted">Zona Leste</small>
+                                <h5 class="mb-0">Ana Oliveira</h5>
+                                <small class="text-muted">Cliente desde 2019</small>
                             </div>
                         </div>
                     </div>
@@ -377,11 +381,11 @@
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-half text-warning"></i>
                         </div>
-                        <p class="fst-italic">"Atendimento excelente! Sempre que precisei, fui muito bem atendido. A internet é estável mesmo em horários de pico, perfeita para home office."</p>
+                        <p class="fst-italic">"Precisava de assessoria para minha pequena empresa e encontrei no escritório Strahl & Berthold o suporte jurídico que precisava. Atendimento de excelência."</p>
                         <div class="d-flex align-items-center mt-3">
                             <div>
                                 <h5 class="mb-0">Ricardo Santos</h5>
-                                <small class="text-muted">Centro</small>
+                                <small class="text-muted">Cliente desde 2020</small>
                             </div>
                         </div>
                     </div>
@@ -397,20 +401,25 @@
             <div class="row">
                 <div class="col-md-6">
                     <h4>Informações de Contato</h4>
-                    <p><i class="bi bi-geo-alt-fill me-2"></i> Av. Principal, 1234 - Centro, Cidade - Estado</p>
-                    <p><i class="bi bi-telephone-fill me-2"></i> (11) 3456-7890</p>
-                    <p><i class="bi bi-whatsapp me-2"></i> (11) 9 9999-8888</p>
-                    <p><i class="bi bi-envelope-fill me-2"></i> contato@netveloz.com.br</p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> Rua Raimundo Alessio, 714 - Centro, Nova Palma - RS</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i> (55) 3276-1234</p>
+                    <p><i class="bi bi-whatsapp me-2"></i> (55) 9 9999-8888</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> contato@strahleberthold.com.br</p>
                     
                     <h4 class="mt-4">Horário de Atendimento</h4>
                     <p>Segunda a Sexta: 8h às 18h</p>
-                    <p>Sábado: 9h às 13h</p>
+                    <p>Sábado: 9h às 12h (com agendamento)</p>
+                    
+                    <div class="mt-4">
+                        <h4>CNPJ</h4>
+                        <p>04.950.899/0001-64</p>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h4>Fale Conosco</h4>
+                    <h4>Agende uma Consulta</h4>
                     <form>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Seu nome">
+                            <input type="text" class="form-control" placeholder="Seu nome completo">
                         </div>
                         <div class="mb-3">
                             <input type="email" class="form-control" placeholder="Seu e-mail">
@@ -419,7 +428,19 @@
                             <input type="tel" class="form-control" placeholder="Seu telefone">
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+                            <select class="form-select">
+                                <option selected>Selecione o assunto</option>
+                                <option>Direito Imobiliário</option>
+                                <option>Direito de Família</option>
+                                <option>Direito Trabalhista</option>
+                                <option>Direito Empresarial</option>
+                                <option>Direito Civil</option>
+                                <option>Direito do Consumidor</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Descreva brevemente sua necessidade"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                     </form>
@@ -434,11 +455,10 @@
             <div class="mb-3">
                 <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
-                <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
             </div>
-            <p>&copy; 2023 NetVeloz Provedor de Internet. Todos os direitos reservados.</p>
+            <p>&copy; 2023 Strahl & Berthold Advogados Associados S/C. Todos os direitos reservados.</p>
+            <p>CNPJ: 04.950.899/0001-64</p>
         </div>
     </footer>
 
@@ -446,8 +466,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
